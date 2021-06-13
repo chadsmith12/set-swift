@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var game: SetGameViewModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            AspectVGrid(items: game.cardsInGame, aspectRatio: 2/3) { card in
+                CardView(card: card)
+                    .onTapGesture {
+                        game.choose(card: card)
+                    }
+            }
+            Spacer()
+            Button("Add Cards") {
+                game.dealCards()
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(game: SetGameViewModel())
     }
 }

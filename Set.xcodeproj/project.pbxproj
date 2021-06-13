@@ -23,6 +23,8 @@
 		C739E2EA2675A813009FEF0E /* CardShadingModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C739E2E92675A813009FEF0E /* CardShadingModifier.swift */; };
 		C739E2EC2675B3C6009FEF0E /* BackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C739E2EB2675B3C6009FEF0E /* BackCardView.swift */; };
 		C739E2EE2675B5B8009FEF0E /* FrontCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C739E2ED2675B5B8009FEF0E /* FrontCardView.swift */; };
+		C739E2F026768FD0009FEF0E /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C739E2EF26768FD0009FEF0E /* AspectVGrid.swift */; };
+		C739E2F326769367009FEF0E /* SetGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C739E2F226769367009FEF0E /* SetGameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		C739E2E92675A813009FEF0E /* CardShadingModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardShadingModifier.swift; sourceTree = "<group>"; };
 		C739E2EB2675B3C6009FEF0E /* BackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardView.swift; sourceTree = "<group>"; };
 		C739E2ED2675B5B8009FEF0E /* FrontCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardView.swift; sourceTree = "<group>"; };
+		C739E2EF26768FD0009FEF0E /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		C739E2F226769367009FEF0E /* SetGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 		C739E2C0267073BC009FEF0E /* Set */ = {
 			isa = PBXGroup;
 			children = (
+				C739E2F126769345009FEF0E /* ViewModel */,
 				C739E2DF26732052009FEF0E /* Shapes */,
 				C739E2DC2670837E009FEF0E /* Views */,
 				C739E2D326707815009FEF0E /* Enums */,
@@ -125,6 +130,7 @@
 				C739E2E62675A478009FEF0E /* ShapeBuilderView.swift */,
 				C739E2EB2675B3C6009FEF0E /* BackCardView.swift */,
 				C739E2ED2675B5B8009FEF0E /* FrontCardView.swift */,
+				C739E2EF26768FD0009FEF0E /* AspectVGrid.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +149,14 @@
 				C739E2E92675A813009FEF0E /* CardShadingModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		C739E2F126769345009FEF0E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C739E2F226769367009FEF0E /* SetGameViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,11 +231,13 @@
 				C739E2EE2675B5B8009FEF0E /* FrontCardView.swift in Sources */,
 				C739E2E72675A478009FEF0E /* ShapeBuilderView.swift in Sources */,
 				C739E2E3267463CF009FEF0E /* ShapeView.swift in Sources */,
+				C739E2F326769367009FEF0E /* SetGameViewModel.swift in Sources */,
 				C739E2D72670783D009FEF0E /* CardColor.swift in Sources */,
 				C739E2C4267073BC009FEF0E /* ContentView.swift in Sources */,
 				C739E2D92670785C009FEF0E /* CardNumber.swift in Sources */,
 				C739E2D22670751A009FEF0E /* SetGame.swift in Sources */,
 				C739E2C2267073BC009FEF0E /* SetApp.swift in Sources */,
+				C739E2F026768FD0009FEF0E /* AspectVGrid.swift in Sources */,
 				C739E2D526707827009FEF0E /* CardShape.swift in Sources */,
 				C739E2E126732076009FEF0E /* Diamond.swift in Sources */,
 				C739E2DE26708393009FEF0E /* CardView.swift in Sources */,

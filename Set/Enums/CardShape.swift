@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum CardShape {
+enum CardShape: CaseIterable {
     case oval, rectangle, diamond
 }

@@ -23,9 +23,10 @@ struct CardView: View {
 }
 
 struct CardView_Previews: PreviewProvider {
-    static let card =  SetGame.Card(isSelected: false, isMatched: false, cardData: SetGame.CardData(shape: .diamond, color: .red, number: .three, shading: .outlined))
+    static let card =  SetGame.Card(isSelected: false, isMatched: false, cardData: SetGame.CardData(shape: .diamond, color: .red, number: .three, shading: .outlined), id: 1)
     static var previews: some View {
         CardView(card: card)
-        CardView(card: SetGame.Card(isSelected: true, isMatched: false, cardData: SetGame.CardData(shape: .oval, color: .green, number: .two, shading: .solid)))
+        CardView(card: SetGame.Card(isSelected: true, isMatched: false, cardData: SetGame.CardData(shape: .oval, color: .green, number: .two, shading: .solid), id: 1))
+            .preferredColorScheme(.dark)
     }
 }

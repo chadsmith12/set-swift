@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum CardNumber {
+enum CardNumber: CaseIterable {
     case one, two, three
 }

@@ -38,7 +38,7 @@ struct FrontCardView: View {
 }
 
 struct FrontCardView_Previews: PreviewProvider {
-    static let card =  SetGame.Card(isSelected: false, isMatched: false, cardData: SetGame.CardData(shape: .diamond, color: .red, number: .three, shading: .outlined))
+    static let card =  SetGame.Card(isSelected: false, isMatched: false, cardData: SetGame.CardData(shape: .diamond, color: .red, number: .three, shading: .outlined), id: 1)
     static var previews: some View {
         ZStack {
             FrontCardView(card: card)

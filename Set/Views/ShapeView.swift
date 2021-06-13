@@ -28,6 +28,6 @@ struct ShapeView: View {
 
 struct ShapeView_Previews: PreviewProvider {
     static var previews: some View {
-        ShapeView(card: SetGame.Card(isSelected: true, isMatched: true, cardData: SetGame.CardData(shape: .oval, color: .purble, number: .three, shading: .outlined)))
+        ShapeView(card: SetGame.Card(isSelected: true, isMatched: true, cardData: SetGame.CardData(shape: .oval, color: .purble, number: .three, shading: .outlined), id: 1))
     }
 }

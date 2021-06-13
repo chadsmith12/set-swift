@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum CardShading {
+enum CardShading: CaseIterable {
     case solid, transparent, outlined
 }
